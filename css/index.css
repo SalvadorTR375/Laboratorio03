@@ -12,3 +12,77 @@ body {
   width: 50px;
 }
 
+/* Codigo agregado : */
+
+header{
+  display: flex; /* Los elementos se hacen inline*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; /* Espaciamiento equitativo por ambos lados*/
+  margin-top: 15px;
+}
+nav{
+  text-align:left;
+  background-color:gray;
+  margin-left: 5px;
+  margin-bottom: 7px;
+}
+ul{
+  list-style: none; /* Le quitamos los puntos de enlistado a los elementos de la lista*/
+}
+.hamburger{
+  display: flex;
+  justify-content: flex-end; /* lo mandamos hasta la izq*/
+  color:white;
+}
+.menu { /* Desaparecemos/ocultamos la lista del menu*/
+  display: none;
+}
+.product{
+  border:solid;
+  border-width: 2px;
+  border-color: gray;
+  text-align: center;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* ------------------------  Ipads --------------------------------- */  
+@media(min-width: 768px) and (max-width: 1024px){
+  header{
+    display: flex;
+    flex-direction: row;
+  }
+  h1{
+    margin-right: 110px;
+  }
+  nav{
+    background-color:darkslategrey;
+  }
+  .product{
+    border:solid;
+    border-width: 3px;
+    border-color:ghostwhite;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .social{
+    margin-top: 7px;
+    border-width: 4px;
+    border-top: solid;
+    border-color:ghostwhite;
+    padding-top: 15px;
+  }
+
+}
+
+/* ------------------------ Large Screen ----------------------- */
+@media(min-width: 1025px){
+  body{
+    background-color: blue;
+  }
+}
+
