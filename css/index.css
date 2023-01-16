@@ -60,7 +60,7 @@ ul{
     margin-right: 110px;
   }
   nav{
-    background-color:darkslategrey;
+    background-color:darkgray;
   }
   .product{
     border:solid;
@@ -81,8 +81,37 @@ ul{
 
 /* ------------------------ Large Screen ----------------------- */
 @media(min-width: 1025px){
-  body{
-    background-color: blue;
+  header{
+    display: flex;
+    flex-direction: row;
   }
+  h1{
+    margin-right: 110px;
+  }
+
+
+  nav{
+    background-color:darkslategray;
+    margin-left: 2px;
+    padding: 8px;
+  }
+  .hamburger{
+    display: none;
+  }
+  .menu{
+    
+    display: flex;
+    justify-content: flex-end;
+    color: white; 
+  }
+  .product{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border:solid;
+    border-width: 3px;
+    border-color: ghostwhite;
+  }
+
 }
 
